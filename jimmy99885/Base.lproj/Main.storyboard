@@ -1,24 +1,1214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="egT-Bm-qBU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="2J7-Pm-hBt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tabBarController id="egT-Bm-qBU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KbI-C4-bD0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x2o-kp-ymg" kind="relationship" relationship="viewControllers" id="0ux-09-86r"/>
+                        <segue destination="8th-tZ-7cm" kind="relationship" relationship="viewControllers" id="U4w-Nj-4gF"/>
+                        <segue destination="M17-MZ-GRn" kind="relationship" relationship="viewControllers" id="XNy-s5-OLS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASc-wV-jMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2684" y="28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uHp-I5-n4A">
+            <objects>
+                <navigationController id="M17-MZ-GRn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="景點" systemItem="mostViewed" id="7CZ-B4-U7f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UyF-Qj-ChL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1n2-mM-tfa" kind="relationship" relationship="rootViewController" id="FXl-s6-8oA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nnl-7u-2xF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1434" y="974"/>
+        </scene>
+        <!--思源井-->
+        <scene sceneID="wsJ-u9-LmV">
+            <objects>
+                <viewController id="HJG-xH-AFf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNo-OI-GfR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-2" translatesAutoresizingMaskIntoConstraints="NO" id="tCC-fC-0zV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="名稱：思源井 簡介：日治時期開鑿的老水井，百年校慶特別加以整修，使土小師生可以一探井內面貌，回想先人篳路藍縷的辛苦開創，我們應飲水思源常懷感恩之心！" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="at5-IM-R0s">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7pH-rU-V3c"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="思源井" id="iXX-Pv-IcT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2V-ea-rvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="974"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RgE-Sy-fIC">
+            <objects>
+                <navigationController id="8th-tZ-7cm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="地圖" systemItem="bookmarks" id="KgI-vY-Lul"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LQV-by-KzC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OFf-g6-0LU" kind="relationship" relationship="rootViewController" id="hRW-vY-8MS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGD-bb-Tlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1434" y="285"/>
+        </scene>
+        <!--校園地圖-->
+        <scene sceneID="q9y-7B-bbx">
+            <objects>
+                <viewController id="OFf-g6-0LU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DbW-zM-Cgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="土城國小3D圖" translatesAutoresizingMaskIntoConstraints="NO" id="vvq-8D-06t">
+                                <rect key="frame" x="0.0" y="64" width="375" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ov-Id-9jM">
+                                <rect key="frame" x="0.0" y="317" width="375" height="301"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="yVG-pn-iP1" kind="embed" id="bWl-IX-JAD"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="RHp-Ou-3bY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="校園地圖" id="dxA-7s-QyC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXN-Tm-He0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-639" y="285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EUg-Bt-eVb">
+            <objects>
+                <navigationController id="x2o-kp-ymg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="首頁" systemItem="topRated" id="KvY-yK-ivg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FhA-y6-lmY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gP4-eC-5p1" kind="relationship" relationship="rootViewController" id="7u9-Pp-sfj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dz-Fd-Pa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1434" y="-410"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="JWG-pz-d95">
+            <objects>
+                <viewController id="gP4-eC-5p1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBa-fi-99n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cu49674e79b427c" translatesAutoresizingMaskIntoConstraints="NO" id="iSs-AH-Ric">
+                                <rect key="frame" x="64" y="146" width="261" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="土城國小簡介" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OIq-Zk-uZY">
+                                <rect key="frame" x="84" y="90" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWx-p0-Fke">
+                                <rect key="frame" x="79" y="538" width="230" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <state key="normal" title="點此進入"/>
+                                <connections>
+                                    <segue destination="9AA-oe-mdD" kind="show" id="Uva-Ac-yyT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLe-o1-PcW">
+                                <rect key="frame" x="33" y="392" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="土城國小3D圖"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="OFf-g6-0LU" kind="show" id="1IS-bg-3lH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axM-2Z-DvW">
+                                <rect key="frame" x="259" y="392" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="土城國小-校園景點介紹"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="1n2-mM-tfa" kind="show" id="t8f-zB-rjK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="景點總覽" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZk-HS-NbV">
+                                <rect key="frame" x="275" y="500" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="校園地圖" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iez-Ps-eN9">
+                                <rect key="frame" x="49" y="500" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GSI-gh-jts"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首頁" id="Evu-d1-ANN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EeH-sa-Viq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.20000000000005" y="-411.544227886057"/>
+        </scene>
+        <!--校園簡介-->
+        <scene sceneID="Fa0-R9-co3">
+            <objects>
+                <viewController id="9AA-oe-mdD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IYI-gZ-8qm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="schlogo" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-PB-ZV0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="atU-u5-4mK">
+                                <rect key="frame" x="8" y="194" width="359" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">坐落在土城區公所旁的土城國民小學，是台灣最古老的小學之一，成立於民國二年。也許使人聯想到飽經風霜的面貌，然而高齡的土城國小卻是亮麗活潑充滿朝氣及完全的現代化。
+
+    環顧校園，堂皇美觀的教室，中庭規劃為「親水遊戲區」，造型優美的小橋流水及浣溪沙是小朋友下課休憩的好場所。同時，學校也成立了「咕咕雞園」及「菜香園」，讓小朋友有機會能體驗農村生活，享受揮汗耕耘的樂趣。
+
+    土城的校地並不大，但還是規劃出浣溪沙、跳房子遊戲區、中庭開放區...等遊戲場地，土城國小就是這樣一個充滿了愛和歡笑的大家庭。
+
+    「一步一腳印」，如果土城國小是一列充滿動力的火車，帶領著每一位師生，開往亮麗的明天，航向璀璨的未來。</string>
+                                <color key="textColor" red="1" green="0.20914790791390869" blue="0.20760124104087296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-de-y2L">
+                                <rect key="frame" x="243" y="74" width="124" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="基本資料">
+                                    <color key="titleColor" red="1" green="0.24090474295359798" blue="0.18440189062940315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2qQ-dm-Eve" kind="show" id="B8W-of-zZ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Uzd-SC-n2g"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="校園簡介" id="uU0-ew-Rae"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prb-JO-ZXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-411.544227886057"/>
+        </scene>
+        <!--基本資料-->
+        <scene sceneID="0H3-HU-eOv">
+            <objects>
+                <viewController id="2qQ-dm-Eve" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w64-sH-Xvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="qXp-oI-zs3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oU3-j8-PuS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基本資料" id="Bxb-dK-n43"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duS-2E-Nro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="-411.544227886057"/>
+        </scene>
+        <!--環保大樹-->
+        <scene sceneID="pop-jp-h4a">
+            <objects>
+                <viewController id="B0F-T1-CVe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hV8-1l-tQK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6-3" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-QZ-00S">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="名稱：環保大樹 簡介：回收課桌椅和颱風過境折損的樹枝加以活化運用妝點而成的，樹木上的掛飾是由廢棄之工程帽和浮球彩繪昆蟲飛禽爬蟲類動物的圖案，充分發揮就地取材和融合校園環境的設計，讓小朋友在生態創意藝術中潛移默化的快樂習。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3wN-ob-u52">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="57V-I5-VQ0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="環保大樹" id="IX4-kf-aZB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huC-S5-aAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="1648"/>
+        </scene>
+        <!--德風穿堂-->
+        <scene sceneID="P8J-Ov-IaA">
+            <objects>
+                <viewController id="lHO-Hq-bYX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lvt-C8-rHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1" translatesAutoresizingMaskIntoConstraints="NO" id="ifK-Sb-Fj2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="名稱：德風穿堂 簡介：右側「百年建校紀念牆」以過去的校園景觀標地，串連百年建校的故事背景，拱形校門、古早水井、屋脊公告欄、日式拱形窗牆等，述說百年的記憶。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9uj-aK-Ajk">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="yAY-T3-KBc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="德風穿堂" id="j3u-hv-cHh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1d-G9-FnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="974"/>
+        </scene>
+        <!--眺望山景-->
+        <scene sceneID="v3M-j4-yCG">
+            <objects>
+                <viewController id="25R-n9-pxJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f36-DQ-KMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9-1" translatesAutoresizingMaskIntoConstraints="NO" id="jfU-O9-jO8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="82R-gg-eYp">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">名稱：遠眺山景 簡介：站在土城後操場上望者遠山，像一幅山水畫，層疊的山、飄渺的雲霧，及特有的鳥群在飛翔，將此美景以馬賽克拼貼在土城國小的司令台上。左側是兩面籃球架的水泥背板，以學校種植的月桃花為主及土城國小的嬌客喜鵲為主角彩繪成的牆面，結合了人與自然，與在地環境密不可分的關係。</string>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="fFX-sh-JdQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="眺望山景" id="1Fm-jh-9fu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pR6-4q-vhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="1648"/>
+        </scene>
+        <!--逸園-->
+        <scene sceneID="0LL-6z-1OV">
+            <objects>
+                <viewController id="fZY-h6-ylI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OsV-BO-cE5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-2" translatesAutoresizingMaskIntoConstraints="NO" id="cSX-1q-FYF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="名稱：逸園 簡介：累積著百餘年的學生玩樂的記憶，這裡是土城國自然生態學習休憩區。逸園在日治時期就已經種植是各式植物觀察園，再歷多年的建設，與整建種植，已成為孩童們環境生態，觀察、遊憩的歡樂園地。 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DIg-CU-f04">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ges-oa-abA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="逸園" id="tLY-4Y-BmJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyA-Wv-jKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="974"/>
+        </scene>
+        <!--時空膠囊-->
+        <scene sceneID="oyI-eD-xps">
+            <objects>
+                <viewController id="TgO-uu-Qdl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KUo-Lr-Rrb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4-1" translatesAutoresizingMaskIntoConstraints="NO" id="rr0-xT-TOS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D4C-Ua-Em8">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">名稱：時空膠囊 簡介：為延續畢業校友對學校的情感不輟，感謝本校榮譽會長也是傑出校友林寬政先生，大力支持下，特別開闢了「時空膠囊區」。孩子畢業前，寫一封「給10年後的自己」，將願望與感恩的心寫在膠囊中，夢想能夠實現，相約10年後，一起回校回味10年前的願望與感恩的情懷。</string>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="iVE-TA-dkU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="時空膠囊" id="4oB-be-8Zz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CI4-Dc-2Fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2905" y="974"/>
+        </scene>
+        <!--美育樓-->
+        <scene sceneID="dg1-iS-7AR">
+            <objects>
+                <viewController id="kcB-Jy-goH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PMU-dr-dbg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="美育樓" translatesAutoresizingMaskIntoConstraints="NO" id="QvH-1D-kmL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：美育樓 內部教室：一樓圖書館，二樓校史室，藝文中心，三樓資訊中心，電腦教室，四樓活動中心" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-Xa-tJf">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="HYc-cX-1Ve"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="美育樓" id="MYg-Pi-dhV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZD-Rv-nHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3599" y="285"/>
+        </scene>
+        <!--群英樓-->
+        <scene sceneID="Bbd-eX-wJh">
+            <objects>
+                <viewController id="uxp-q1-tSR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nfl-j3-YPT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="群英樓" translatesAutoresizingMaskIntoConstraints="NO" id="NWF-fX-nFv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：群英樓 內部教室：一樓特教班，二三四五樓一般教室" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oOg-fB-RGo">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="o3g-71-z1d"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="群英樓" id="uCa-no-peQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8F-CU-ubW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906" y="285"/>
+        </scene>
+        <!--體健樓-->
+        <scene sceneID="aLc-uB-ffo">
+            <objects>
+                <viewController id="74C-kl-omH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E69-xl-cpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="體健樓" translatesAutoresizingMaskIntoConstraints="NO" id="GKK-J2-hNd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：體健樓 內部教室：一樓特教班，雜貨店，二樓一般教室，三樓英語教室" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cxz-ec-zcE">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5SR-L9-l6P"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="體健樓" id="D9P-iY-HiN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifu-Yl-3pO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2199" y="285"/>
+        </scene>
+        <!--智真樓-->
+        <scene sceneID="5rj-lS-h9Z">
+            <objects>
+                <viewController id="Rae-ri-4Y2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B3Q-s4-a9w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="智真樓" translatesAutoresizingMaskIntoConstraints="NO" id="kq0-Sl-ehD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：智真樓 內部教室：一樓幼兒園，二三四樓一般教室，五樓專科教室" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s1e-9L-aVM">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="0oO-tz-SJW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="智真樓" id="aBC-qB-CSE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reb-oI-I22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="285"/>
+        </scene>
+        <!--校園地圖-->
+        <scene sceneID="wWV-Xq-Dml">
+            <objects>
+                <tableViewController id="yVG-pn-iP1" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eQ3-3x-XiW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="gu0-Ab-1rd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="DLQ-DP-6GR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DLQ-DP-6GR" id="qMf-Cc-57T">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="德風樓" translatesAutoresizingMaskIntoConstraints="NO" id="qpq-xW-BmI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="德風樓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qke-eq-FCp">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="ueK-of-Tu7" kind="show" id="R2x-eb-WEU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="OKf-xk-dRy">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OKf-xk-dRy" id="a3U-AL-Cxw">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="智真樓" translatesAutoresizingMaskIntoConstraints="NO" id="xzW-fT-hd4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="智真樓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-ed-mCQ">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="Rae-ri-4Y2" kind="show" id="1be-jc-bmX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="Jt1-GN-fB1">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jt1-GN-fB1" id="gNV-LC-tmB">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="體健樓" translatesAutoresizingMaskIntoConstraints="NO" id="Dti-Ud-gpA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="體健樓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-NM-BSW">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="74C-kl-omH" kind="show" id="QjB-XI-qMA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="HfP-Ap-lGK">
+                                        <rect key="frame" x="0.0" y="360" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HfP-Ap-lGK" id="7VR-JA-oTi">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="群英樓" translatesAutoresizingMaskIntoConstraints="NO" id="icE-RJ-ntI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="群英樓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-eE-dwZ">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="uxp-q1-tSR" kind="show" id="LjJ-BE-Yh9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="G7L-df-Q53">
+                                        <rect key="frame" x="0.0" y="480" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G7L-df-Q53" id="W6V-O1-Owr">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="美育樓" translatesAutoresizingMaskIntoConstraints="NO" id="q6v-g7-MlO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="美育樓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-ox-gxT">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="kcB-Jy-goH" kind="show" id="HvW-ow-AzB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yVG-pn-iP1" id="UYE-jt-NEA"/>
+                            <outlet property="delegate" destination="yVG-pn-iP1" id="CvX-vW-1Le"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="校園地圖" id="ZBl-UP-CMX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp1-uy-eMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="285"/>
+        </scene>
+        <!--德風樓-->
+        <scene sceneID="mqr-GH-DiV">
+            <objects>
+                <viewController id="ueK-of-Tu7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iyy-mw-XOK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="德風樓" translatesAutoresizingMaskIntoConstraints="NO" id="5p3-qO-3cm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="名稱：德風樓 內部教室：行政單位，演藝廳音樂教室，三四樓一般教室" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GWw-Gj-rNa">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ATg-e4-vSD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="德風樓" id="LJ2-8B-tSA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXF-N4-wC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="285"/>
+        </scene>
+        <!--景點總覽-->
+        <scene sceneID="iyg-ct-CWk">
+            <objects>
+                <viewController id="1n2-mM-tfa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hnb-Tw-vcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="土城國小-校園景點介紹" translatesAutoresizingMaskIntoConstraints="NO" id="Xlr-5m-DiJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k09-Tg-6QW">
+                                <rect key="frame" x="0.0" y="317" width="375" height="301"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="i0X-hh-Se2" kind="embed" id="Kzj-4Z-cXF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="iaW-Jd-5Ky"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="景點總覽" id="29E-t4-aje"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JzT-1W-u0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="974"/>
+        </scene>
+        <!--景點總覽-->
+        <scene sceneID="OOx-yX-nms">
+            <objects>
+                <tableViewController id="i0X-hh-Se2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nz5-52-1F3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="BZG-o9-JGb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="usu-nd-Wl1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usu-nd-Wl1" id="6Qa-lR-dHh">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1-2" translatesAutoresizingMaskIntoConstraints="NO" id="KhL-QN-kcD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="思源井" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qAQ-Px-7fy">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="HJG-xH-AFf" kind="show" id="dP4-Z1-q8b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="dtL-gN-Xj5">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dtL-gN-Xj5" id="Iy9-8l-H62">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-2" translatesAutoresizingMaskIntoConstraints="NO" id="bBX-TW-Wrj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="逸園" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZt-G0-VwG">
+                                                    <rect key="frame" x="219" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="fZY-h6-ylI" kind="show" id="0i6-Kz-zVL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="mqN-rQ-iNT">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mqN-rQ-iNT" id="CeC-nQ-myf">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-1" translatesAutoresizingMaskIntoConstraints="NO" id="u63-Zn-Pxj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="德風穿堂" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-8M-Mp9">
+                                                    <rect key="frame" x="198" y="36" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="lHO-Hq-bYX" kind="show" id="wcs-VQ-rhx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="y1J-hK-oZ0">
+                                        <rect key="frame" x="0.0" y="360" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y1J-hK-oZ0" id="MCX-xl-Dto">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4-1" translatesAutoresizingMaskIntoConstraints="NO" id="jN7-Xa-bWc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="時空膠囊" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ko-8O-3oa">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="TgO-uu-Qdl" kind="show" id="kP6-sf-hba"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="bEO-VM-vRF">
+                                        <rect key="frame" x="0.0" y="480" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bEO-VM-vRF" id="w5L-BD-jha">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5-1" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-za-Mt4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="故事洗台" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Myg-6e-9l2">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="Lia-wd-sfk" kind="show" id="7bz-og-pym"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="T6c-WK-lST">
+                                        <rect key="frame" x="0.0" y="600" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T6c-WK-lST" id="iwf-QU-uCr">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6-3" translatesAutoresizingMaskIntoConstraints="NO" id="cIF-7x-XlY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="環保大樹" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4J-nH-75s">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="B0F-T1-CVe" kind="show" id="vxR-ID-EnT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="6zn-aG-dL6">
+                                        <rect key="frame" x="0.0" y="720" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6zn-aG-dL6" id="EAP-32-cG2">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7-1" translatesAutoresizingMaskIntoConstraints="NO" id="UAV-i4-lmg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="親水步道" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVy-zR-24h">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="XDp-Az-ezw" kind="show" id="QCt-Oh-6YN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="NT7-Oq-31R">
+                                        <rect key="frame" x="0.0" y="840" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NT7-Oq-31R" id="xep-P5-7Py">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8-1" translatesAutoresizingMaskIntoConstraints="NO" id="gKx-mx-uTI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="土城公仔" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-H4-LkS">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="5LS-GN-4Jt" kind="show" id="L71-I2-LBi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="mJg-HB-Qb6">
+                                        <rect key="frame" x="0.0" y="960" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJg-HB-Qb6" id="wX9-fh-FkH">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Eo-yH-hzt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="遠眺山景" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBn-oW-bpg">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="25R-n9-pxJ" kind="show" id="Rn2-pD-wgb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="120" id="10E-VT-lYx">
+                                        <rect key="frame" x="0.0" y="1080" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="10E-VT-lYx" id="7o0-dP-zw4">
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10-3" translatesAutoresizingMaskIntoConstraints="NO" id="TUW-5q-1i7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="菩提心" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-du-M9b">
+                                                    <rect key="frame" x="206" y="37" width="135" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="3SL-dA-eKq" kind="show" id="rXl-q7-F25"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="i0X-hh-Se2" id="J4T-Da-ubs"/>
+                            <outlet property="delegate" destination="i0X-hh-Se2" id="0Bb-hZ-HCc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="景點總覽" id="wmK-zx-Y2V"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r72-yP-7TS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="974"/>
+        </scene>
+        <!--菩提心-->
+        <scene sceneID="BB8-R5-4VM">
+            <objects>
+                <viewController id="3SL-dA-eKq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7iJ-4K-xUd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10-3" translatesAutoresizingMaskIntoConstraints="NO" id="uQm-WH-vRy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ErN-y1-1Fc">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">名稱：菩提心 簡介：位於景觀池前，美育樓的外牆上，靜靜的矗立著一棵高大的彩繪菩提樹。樹上一片片巴掌大的心型葉片，在陽光下綻放著晶瑩釉綠的光芒。每一片葉片上鏤刻的陌生名字的背後，是百週年校慶活動期間所募集社會資源真摯的善心，他們是校友、各級地方代表、家長、老師、地方仕紳、鄉親，關懷學校發展秉持著愛與關懷，營造更美好的環境中，無盡的延續下去吧！</string>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dpZ-AU-ezT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="菩提心" id="aIc-e6-seV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6E-P8-ib7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3598" y="1648"/>
+        </scene>
+        <!--故事洗台-->
+        <scene sceneID="nVX-NF-EzF">
+            <objects>
+                <viewController id="Lia-wd-sfk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nK8-Y8-fjt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5-1" translatesAutoresizingMaskIntoConstraints="NO" id="zmG-eg-wBb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="名稱：故事洗台 簡介：校園的公共藝術運用在學生的生活上，連結美學教育又可生活藝術化藝術生活化，將常見昆蟲、鳥類融在這種藝術生活裡面，讓十個藝術造型的洗手台具有生命力。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yew-sA-OZv">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Bka-5u-UvR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="故事洗台" id="RID-F4-kPv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKm-7D-s5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3598" y="974"/>
+        </scene>
+        <!--土城公仔-->
+        <scene sceneID="YIx-W8-Z9X">
+            <objects>
+                <viewController id="5LS-GN-4Jt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6U-Ch-4bV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8-1" translatesAutoresizingMaskIntoConstraints="NO" id="bPl-EG-FMl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iqm-xL-tIb">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">名稱：土城公仔 簡介：在校園5個公仔的呈現出德智體群美的五育精神，讓我們看見了孩子們的各種可能與夢想的美好未來，也是孩童們求學時期最大的成長學習及回憶。田徑公仔，代表著田徑社團的努力不懈；棒球公仔，代表著棒球社團全壘打的求勝精神；閱讀公仔，代表著書香滿校園的磐石精神；管樂公仔，代表著管樂團的活力優秀；弦樂公仔，代表著弦樂團的奮發精神。</string>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="fPM-bc-iUt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="土城公仔" id="wab-rH-hzo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eb-G6-vA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="1648"/>
+        </scene>
+        <!--親水步道-->
+        <scene sceneID="7We-UF-jIg">
+            <objects>
+                <viewController id="XDp-Az-ezw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Foc-0C-MQh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7-1" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-oe-uTz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="名稱：親水步道 簡介：這裡是校園中最能展現多元生態與水生動植物的步道，隨著觀賞四季小葉欖仁樹的變化。秋季時，走在步道時還可以聞到陣陣的花香呢！水池旁及小橋邊綠色步道，是畢業季時，學生喜歡拍照留念的好地方，象徵著土城國小學生欣欣向榮的活力。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-IT-jgU">
+                                <rect key="frame" x="0.0" y="279" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.96983111889999996" blue="0.38144323800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98992066059999995" green="0.86378407020000003" blue="0.1019423741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5y0-MH-zIb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="親水步道" id="TgT-mU-qg9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6X-We-3CP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469.5999999999999" y="1647.5262368815593"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1-2" width="5184" height="3456"/>
+        <image name="10-3" width="5616" height="3744"/>
+        <image name="2-2" width="5184" height="3456"/>
+        <image name="3-1" width="5184" height="3456"/>
+        <image name="4-1" width="5184" height="3456"/>
+        <image name="5-1" width="5184" height="3456"/>
+        <image name="6-3" width="5184" height="3456"/>
+        <image name="7-1" width="5184" height="3456"/>
+        <image name="8-1" width="5184" height="3456"/>
+        <image name="9-1" width="5184" height="3456"/>
+        <image name="cu49674e79b427c" width="653" height="653"/>
+        <image name="schlogo" width="600" height="120"/>
+        <image name="title" width="611" height="939"/>
+        <image name="土城國小-校園景點介紹" width="2537" height="1718"/>
+        <image name="土城國小3D圖" width="1181" height="973"/>
+        <image name="德風樓" width="1478" height="1108"/>
+        <image name="智真樓" width="1478" height="1108"/>
+        <image name="美育樓" width="1478" height="1108"/>
+        <image name="群英樓" width="1108" height="1478"/>
+        <image name="體健樓" width="1478" height="1108"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="t8f-zB-rjK"/>
+        <segue reference="1IS-bg-3lH"/>
+    </inferredMetricsTieBreakers>
 </document>
